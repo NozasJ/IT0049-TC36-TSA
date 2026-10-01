@@ -3,4 +3,9 @@
 use CodeIgniter\Router\RouteCollection;
 
 /** @var RouteCollection $routes */
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Pages::index');
+$routes->get('/about', 'Pages::about');
+
+$routes->get('/tasks', 'Tasks::index');
+
+$routes->get('/profile', 'Profile::index');
